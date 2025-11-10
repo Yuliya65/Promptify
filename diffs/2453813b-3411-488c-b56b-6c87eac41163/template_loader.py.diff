@@ -69,7 +69,9 @@
  
              template_name = meta_data["metadata"]["file_name"]
              template_dir = meta_data["metadata"]["file_path"]
-             environment = Environment(loader=FileSystemLoader(template_dir))
+-            environment = Environment(loader=FileSystemLoader(template_dir))
++            environment = Environment(loader=FileSystemLoader(template_dir), autoescape=True)
++            
              template_instance = environment.get_template(template_name)
  
          else:
@@ -78,9 +80,7 @@
  
              template_name = custom_template_name
              template_dir = custom_template_dir
--            environment = Environment(loader=FileSystemLoader(template_dir))
-+            environment = Environment(loader=FileSystemLoader(template_dir), autoescape=True)
-+            
+             environment = Environment(loader=FileSystemLoader(template_dir))
              template_instance = environment.get_template(custom_template_name)
  
          return {
