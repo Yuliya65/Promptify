@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "async": "^3.2.4",
-    "dotenv": "^16.0.3",
+    "dotenv": "^17.0.0",
     "mongoose": "^7.0.4",
     "uuid": "^9.0.0"
   }
