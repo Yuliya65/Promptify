@@ -1,7 +1,7 @@
 openai==0.28.1
 cohere==4.13.1
 anthropic==0.3.4
-regex==2022.10.31
+regex==2025.11.3
 appdirs==1.4.4
 jinja2==2.11.3
 markupsafe==2.1.5
